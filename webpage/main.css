@@ -1,0 +1,64 @@
+header {
+    color: red;
+
+}
+
+h2 {
+    background-color: yellow;
+}
+
+/* Selector de ID */
+/*#moreInfo{
+    color: skyblue;
+
+}*/
+
+/* Selector de tipo Clase*/
+.foo{
+    background-color: peru;
+}
+
+/* Selector de tipo atributo*/
+/* [type] {
+    border: 5px solid blue;
+}*/
+
+/* Selector de tipo atributo y con valor*/
+[type="text"] {
+    background-color: green;
+}
+
+/* Selector descendientes*/
+#listHeader li {
+    background-color: pink;
+}
+
+/* Selector de pseudoClase*/
+/* :first-child, :last-child */
+#listHeader li:nth-child(3) {
+    background-color: purple;
+}
+
+
+h2[data-foo] {
+    border: 5px solid blue;
+}
+
+#moreInfo.foo {
+    border: 10px solid red;
+}
+
+/*Combinaciones de elementos de hijos mas proximos */
+header > p {
+    border: 5px solid aqua
+}
+
+/*Combinaciones de elementos de hermanos adyacentes */
+form div + div {
+    background-color: red;
+}
+
+/* Se le aplica el estilo a h2 y li*/
+h2, li {
+    color: red;
+}
